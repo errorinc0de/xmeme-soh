@@ -1,7 +1,7 @@
 window.env = {
   "ALLUSERSPROFILE": "C:\\ProgramData",
   "APPDATA": "C:\\Users\\Soham Sarkar\\AppData\\Roaming",
-  "CHROME_CRASHPAD_PIPE_NAME": "\\\\.\\pipe\\crashpad_2400_BIHVPHIFXITVVJAU",
+  "CHROME_CRASHPAD_PIPE_NAME": "\\\\.\\pipe\\crashpad_6780_BEVINAZOGTWMZJJQ",
   "COLORTERM": "truecolor",
   "CommonProgramFiles": "C:\\Program Files\\Common Files",
   "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
@@ -170,6 +170,7 @@ window.env = {
   "npm_package_description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "npm_package_eslintConfig_extends_0": "react-app",
   "npm_package_eslintConfig_extends_1": "react-app/jest",
+  "npm_package_gitHead": "d0ef61663193030f368e2e3431c6d59863c027f0",
   "npm_package_name": "xmeme-frontend",
   "npm_package_private": "true",
   "npm_package_readmeFilename": "README.md",

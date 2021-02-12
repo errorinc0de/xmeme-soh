@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import Modal from './Modal.js';
 import './timelineItems.css';
 import axios from 'axios';
-import env from 'react-dotenv';
+
+const backendUrl = "https://xmeme-soh.herokuapp.com/memes";
 
 class timelineItems extends Component {
     
@@ -41,7 +42,7 @@ class timelineItems extends Component {
 
     submitHandler = async(e) => {
         e.preventDefault();
-        const submitURL = env.REACT_APP_BACKEND_URL + `/${this.state.meme.id}`;
+        const submitURL = backendUrl + `/${this.state.meme.id}`;
         await axios.patch(submitURL,this.state.updatePatch).then(res => {
             if(res.data.success === true)
                 alert("Value Successfully updated");
@@ -62,11 +63,11 @@ class timelineItems extends Component {
                     <form onSubmit={this.submitHandler} className="updateForm">
                         <div className="caption" id="field">
                             <h3 id="descrip">Caption:</h3>
-                            <input type="text" id="ip" name="caption" value={this.state.meme.caption} onChange={this.changeHandler} />
+                            <input type="text" id="ip" name="caption" value={this.state.meme.caption} onChange={this.changeHandler} required/>
                         </div>
                         <div className="url" id="field">
                             <h3 id="descrip">Image URL:</h3>
-                            <input type="text" id="ip" name="url" value={this.state.meme.url} onChange={this.changeHandler} />
+                            <input type="text" id="ip" name="url" value={this.state.meme.url} onChange={this.changeHandler} required/>
                         </div>
                         <button type="submit" className="patch-submit">Update</button>
                     </form>

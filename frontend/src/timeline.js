@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import env from 'react-dotenv';
 import TimelineItems from './timelineItems';
 import './timeline.css';
 
+const backendUrl = "https://xmeme-soh.herokuapp.com/memes";
 
 class timeline extends Component {
     constructor(props) {
@@ -15,7 +15,7 @@ class timeline extends Component {
     }
     componentDidMount(){
         var timelineItems = [],memes = [];
-        axios.get(env.REACT_APP_BACKEND_URL).then(res => {
+        axios.get(backendUrl).then(res => {
             timelineItems = res.data;
             const itemLen = timelineItems.length;
             for(let i=itemLen-1,count=0;i>=0 && count<=100;i--,count++){

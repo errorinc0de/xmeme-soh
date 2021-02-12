@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import env from 'react-dotenv';
 import './form.css';
 
+const backendUrl = "https://xmeme-soh.herokuapp.com/memes";
 
 class Form extends Component {
     constructor(props) {
@@ -25,7 +25,7 @@ class Form extends Component {
 
     submitHandler = (e) => {
         e.preventDefault();
-        axios.post(env.REACT_APP_BACKEND_URL,this.state.memeState).then(res => {
+        axios.post(backendUrl,this.state.memeState).then(res => {
             this.setState({memeState: {...this.state.memeState,insertedId: res.data.id}});
             this.setState({memeState:{}});
             window.location.reload();
