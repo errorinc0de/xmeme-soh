@@ -1,0 +1,59 @@
+.card{
+    max-height: 800x;
+    max-width: 500px;
+    margin: 15px auto;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 208, 147);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#edit{
+    padding: 7px 20px;
+    border-radius: 8px;
+    position: relative;
+    outline: none;
+    margin: auto;
+    margin-top: 13px;
+    border: 0;
+    z-index: 1;
+    background-color: rgba(243, 237, 224, 0.897);
+    color: rgba(71, 27, 27, 0.952);  
+    font-size: medium;
+    font-weight: bold;
+}
+
+#edit:hover{
+    background-color: coral;
+    color: white;
+}
+
+.updateForm{
+    margin: auto;
+    width: 100%
+}
+
+#field{
+    padding: 7px;
+    margin: 2px;
+    display: flex;
+}
+
+#descrip{
+    width: 40%;
+}
+
+button{
+    padding: 12px 25px;
+    margin: 5px auto;
+    background-color: rgba(243, 237, 224, 0.897);
+    border: 0px;
+    border-radius: 28px;
+    outline: none;
+    max-width: 275px;
+}
+
+#ip{
+    width: 40%
+}
