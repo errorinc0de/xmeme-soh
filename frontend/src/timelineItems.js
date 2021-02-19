@@ -3,7 +3,7 @@ import Modal from './Modal.js';
 import './timelineItems.css';
 import axios from 'axios';
 
-const backendUrl = "https://xmeme-soh.herokuapp.com/memes";
+const backendUrl = "http://localhost:8081/memes";
 
 class timelineItems extends Component {
     
