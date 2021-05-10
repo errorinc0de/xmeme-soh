@@ -26,7 +26,6 @@ class timeline extends Component {
     }
 
     render() {
-
         return(
             <div className = "timeLineClass">
                 {this.state.memes && this.state.memes.map((meme) => {

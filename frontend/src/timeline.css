@@ -1,3 +1,11 @@
 .timeLineClass{
-    margin-top : 400px;
+    margin-top : 48vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 480px){
+    .timeLineClass{
+        margin-top: 45vh;
+    }
 }
