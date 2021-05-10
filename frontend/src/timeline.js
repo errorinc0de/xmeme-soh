@@ -3,7 +3,7 @@ import axios from 'axios';
 import TimelineItems from './timelineItems';
 import './timeline.css';
 
-const backendUrl = "http://localhost:8081/memes";
+const backendUrl = "http://xmeme-soh.herokuapp.com/memes";
 
 class timeline extends Component {
     constructor(props) {
