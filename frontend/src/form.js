@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import './form.css';
 
-const backendUrl = "http://localhost:8081/memes";
+const backendUrl = "http://xmeme-soh.herokuapp.com/memes";
 
 class Form extends Component {
     constructor(props) {
